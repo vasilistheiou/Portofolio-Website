@@ -1,0 +1,271 @@
+.about-page {
+    background-color: #1a1616;
+    color: #f9f4f4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  
+  }
+
+
+section {
+    border-bottom: 3px solid #1d1b1b;
+    padding: 50px 50px;
+    
+  }
+  
+
+
+/* About Section */
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+  
+
+.about-page h2 {
+    font-size: 3em;
+    font-weight: 600;
+    font-style: italic;
+    color: #e74c3c;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 3%;
+    animation: slideIn 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+.about-page h2::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    bottom: -10px; 
+    left: 0;
+    background-color: #e74c3c;
+    visibility: visible;
+    transform: scaleX(1);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.svg-pic{
+    max-width: 200px;
+    max-height: 200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    animation: slideDown 0.8s ease-out forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+
+.about-text {
+    max-width: 60%;
+    text-align: left;
+    animation: slideDown 0.8s ease-out forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+
+/* Tech Stack CSS */
+.tech-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-around; */
+    background-color: #1a1313;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+
+.tech-stack{
+    display: flex;
+    gap: 70px;
+    animation: slideDown 0.8s ease-out forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+  
+.tech-stack-row{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 50px;
+}
+
+.tech-stack-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10px 0; */
+    /* border: 1px solid transparent; */
+    border-radius: 10px;
+    width: 120px;
+    height: 120px;
+    box-shadow: 0 0 0 1px #ff007a, 0 0 0 3px #7303c0; 
+}
+
+.tech-stack-logo img{
+    height: 45px;
+    width:  45px;
+}
+
+.tech-stack-logo p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+
+/* CV Section */
+.cv-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.cv-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+.facts{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 50%;
+}
+
+.facts p{
+    /* margin: 8px; */
+    margin-left: 20px;
+}
+
+.facts-title{
+    display: flex;
+    align-items: center;
+}
+
+.facts-title p{
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 8px;
+
+}
+.facts-title img{
+    margin-right: 10px;
+    width: 28px;
+    height: 28px;
+}
+
+p img{
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+}
+
+/* Keyframes for animations */
+@keyframes slideIn {
+    from {
+        transform: translateX(150%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .svg-pic{
+        max-width: 200px;
+        max-height: 200px;
+        margin-bottom: 15%;
+    }
+
+    .about-section h2 { 
+        margin-bottom: 15%;
+        font-size: 2em;
+    }
+
+    .about-section h2::after {
+        height: 4px;
+    }
+
+    .about-text p {
+        font-size: 1.1em;
+        line-height: 1.6em;
+        font-weight: 600;
+    }
+
+    .tech-stack{
+        gap: 30px;
+    }
+    
+    .tech-stack-row{
+        gap: 30px;
+    }
+    
+    .tech-stack-logo{
+        border: 3px solid transparent;
+        border-radius: 10px;
+        width: 85px;
+        height: 85px;
+    }
+    
+    .tech-stack-logo img{
+        height: 45px;
+        width: 45px;
+    }
+    
+    .tech-stack-logo p {
+        font-weight: 700;
+        font-size: 0.9em;
+    }
+}
+
+
+@media (min-width: 577px) and (max-width: 768px) {
+  /* Styles for small devices */
+}
+  
+
