@@ -30,17 +30,12 @@ const AboutPage = () => {
             Fully dedicated to the philosophy of continuous learning and innovation, I am 
             a software engineer with a strong foundation in artificial intelligence, 
             software development, and database management. My passion for AI and technology drives me to create 
-            intelligent solutions and deploy them with elegance and precision. The intersection of AI, software engineering, 
-            and database systems offers a dynamic and ever-evolving landscape that I find challenging. This 
-            unique combination allows me to harness creativity, logical thinking,
-            and cutting-edge technology to develop solutions that push the boundaries of what is
-            possible.
+            intelligent solutions and deploy them with elegance and precision. This blend of creativity, logical thinking, 
+            and advanced technology enables me to develop innovative solutions that challenge the limits of what's possible.
           </p>
         </div>
       </section>
 
-
-      
       <section className='tech-section'>
         <h2>Skills Stack</h2>
         <div className="tech-stack">

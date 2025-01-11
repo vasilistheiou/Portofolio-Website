@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import mylogo from "../../Images/Logo/white-logo.png"
-
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
     const [isNavActive, setIsNavActive] = useState(false);
@@ -12,17 +12,18 @@ const Header = () => {
     };
 
     return (
-        <header className="header">
+        // <header className="header">
+        <header>
             <nav className="navbar">
                 <div className="logo">
                     <Link to="/"><img src={mylogo} alt="Logo" /></Link>
                 </div>
-
+                 
                 <ul className={`nav-links ${isNavActive ? 'active' : ''}`}>
-                    <li><Link to="/" onClick={toggleNav}>Home</Link></li>
-                    <li><Link to="/about" onClick={toggleNav}>About</Link></li>
-                    <li><Link to="/projects" onClick={toggleNav}>Projects</Link></li>
-                    <li><Link to="/contact" onClick={toggleNav}>Contact</Link></li>
+                    <li><NavLink to="/" onClick={toggleNav} activeClassName="active">Home</NavLink></li>
+                    <li><NavLink to="/about" onClick={toggleNav} activeClassName="active">About</NavLink></li>
+                    <li><NavLink to="/projects" onClick={toggleNav} activeClassName="active">Projects</NavLink></li>
+                    <li><NavLink to="/contact" onClick={toggleNav} activeClassName="active">Contact</NavLink></li>
                 </ul>
                 <div className="social-icons">
                     <a href="https://github.com/vasilistheiou" target="_blank" rel="noopener noreferrer"><i className="fab fa-github fa-lg"></i></a>
@@ -33,8 +34,6 @@ const Header = () => {
                     <i className="fas fa-bars"></i>
                 </div>
             </nav>
-
-
         </header>
     );
 };

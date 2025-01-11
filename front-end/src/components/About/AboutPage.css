@@ -12,10 +12,8 @@
 section {
     border-bottom: 3px solid #1d1b1b;
     padding: 50px 50px;
-    
   }
   
-
 
 /* About Section */
 .about-section {
@@ -264,8 +262,15 @@ p img{
 }
 
 
-@media (min-width: 577px) and (max-width: 768px) {
-  /* Styles for small devices */
+/* For mobile phones */
+@media (max-width: 480px) {
+
 }
-  
+
+/* For tablets */
+@media (max-width: 768px) {
+
+
+}
+
 
