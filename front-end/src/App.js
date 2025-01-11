@@ -9,6 +9,7 @@ import ProjectsPage from './components/ProjectsPage/ProjectsPage';
 
 // import Footer from './components/Footer';
 
+
 function App() {
   return (
     <Router>

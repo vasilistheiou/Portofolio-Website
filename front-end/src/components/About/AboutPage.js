@@ -17,7 +17,6 @@ import Growth from "../../Images/Facts/Growth.svg"
 
 const AboutPage = () => {
 
-
   return (
     <div className='about-page'>
       <section className="about-section">

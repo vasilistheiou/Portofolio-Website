@@ -64,20 +64,36 @@
   font-weight: bold; /* Optional: Make it stand out */
 }
 
-/* .nav-links.active {
-  display: flex;
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width:30%;
+  background-color: rgba(40, 40, 40, 0.4); 
+  backdrop-filter: blur(10px );
+  z-index: 999;
+  display: none;
+  list-style: none;
   flex-direction: column;
-  align-items: center; 
-  position: absolute;
-  top: 4rem;
-  left: 0;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.sidebar > :first-child {
+  align-self: flex-end;
+  width: 10%;
+  margin-right: 20%;
+}
+
+.sidebar li{
+  margin-top: 20%;
   width: 100%;
-  background-color: rgba(40, 40, 40, 0.95); 
-  padding: 20px 0;
-  z-index: 1000;
-} */
+}
 
-
+.sidebar a{
+  width: 100%;
+}
 
 .social-icons {
   display: flex;
@@ -110,24 +126,12 @@
     padding: 0px 20px;
   }
 
-  .nav-links {
+  .menu {
     display: none;
-    flex-direction: column;
-    align-items: center; 
-    width: 100%;
-    position: absolute;
-    top: 4.5rem;
-    left: 0;
-    background-color: rgba(40, 40, 40, 0.95);
-    z-index: 1000;
   }
 
-  .nav-links.active {
+  .sidebar.active {
     display: flex;
-  }
-
-  .nav-links li {
-    margin: 0;
   }
 
   .hamburger {
