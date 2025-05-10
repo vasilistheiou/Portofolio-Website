@@ -1,8 +1,9 @@
-.homepage {
+  .homepage {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
+    width: 100vw;
     background-color: #1a1616;
     color: #f9f4f4;
     padding: 0 10%;
@@ -11,6 +12,8 @@
   
   .intro {
     max-width: 50%;
+    /* TODO: Add min width to not shrink that much */
+    /* min-width: none; */ 
     animation: slideDown 1s ease-out forwards;
     animation-delay: 0.5s;
     opacity: 0;
@@ -39,7 +42,7 @@
   }
 
   .contact-button:hover {
-    background-color: #c0392b; /* Darker shade for hover effect */
+    background-color: #c0392b;
   }
 
   .contact-button .contact-link {
@@ -75,16 +78,15 @@
   @media (max-width: 768px) {
     .homepage {
       flex-direction: column;
-      align-items: space-between;
-      justify-content: center;
-      padding: 0% 5%; 
-      height: 100vh;
-      margin-top: 20%;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 8% 10%; 
     }
 
     .intro {
       max-width: 100%;
       text-align: center;
+
     }
     
     .intro h1 {
