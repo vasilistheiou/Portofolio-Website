@@ -28,7 +28,7 @@
     color: #e74c3c;
   }
   
-  
+
   .contact-button {
     background-color: #e74c3c;
     color: #f9f4f4;
@@ -38,6 +38,7 @@
     border-radius: 5px;
     cursor: pointer;
     margin-top: 1em;
+    margin-right: 30px;
     transition: background-color 0.3s ease;
   }
 

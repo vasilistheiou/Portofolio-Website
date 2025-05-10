@@ -14,6 +14,9 @@ const HomePage = () => {
         <Link to="/contact" className="contact-link">
           <button className="contact-button">Contact</button>
         </Link>
+          <a href="/MyCV.pdf" download>
+            <button className="contact-button">CV</button>
+          </a>
       </div>
       <div className="photo">
         <img src={myImage} alt="Vasilis" />
