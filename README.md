@@ -29,3 +29,8 @@ Ensure you have the following installed on your system:
 git clone https://github.com/your-username/portfolio-website.git
 cd portfolio-website
 
+### Run Project Locally
+
+1. Install Dependencies:
+```bash
+npm install
