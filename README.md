@@ -35,3 +35,13 @@ cd portfolio-website
 ```bash
 npm install
 ```
+
+2. Start Development Server:
+```bash
+npm start
+```
+
+3. Open Browser and go to:
+```bash
+http://localhost:3000
+```
