@@ -1,6 +1,4 @@
-import React from 'react';
 import './ProjectCard.css';
-// import test from '../../../Images/test.png'
 
 const ProjectCard = ({props}) => {
     const {projectTitle, description, imageUrl} = props
@@ -12,9 +10,9 @@ const ProjectCard = ({props}) => {
                 <p className="card-title"> {projectTitle}</p>
                 <p className= "card-subtitle">Description:</p>
                 <p className='card-description'>{description}</p>
-                <div className="button-wrapper">
+                {/* <div className="button-wrapper">
                     <button className="card-button">View Details</button>
-                </div>
+                </div> */}
             </div>
         </div>
     );
