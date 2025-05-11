@@ -9,11 +9,18 @@ import PythonLogo from "../../Images/TechStack/python-logo.svg";
 import GitLogo from "../../Images/TechStack/git-logo.svg";
 import home from "../../Images/Facts/home.svg";
 import Study from "../../Images/Facts/Study.svg"
-import Work from "../../Images/Facts/Work.svg"
 import Location from "../../Images/Facts/Location.svg"
 import Diploma from "../../Images/Facts/Diploma.svg"
 import Like from "../../Images/Facts/Like.svg"
 import Growth from "../../Images/Facts/Growth.svg"
+import Gym from "../../Images/Facts/Gym.svg"
+import Ball from "../../Images/Facts/Ball.svg"
+import Books from "../../Images/Facts/Books.svg"
+import Motor from "../../Images/Facts/Motor.svg"
+import Travel from "../../Images/Facts/Travel.svg"
+import Documents from "../../Images/Facts/Documents.svg"
+import Communication from "../../Images/Facts/Communication.svg"
+import Brain from "../../Images/Facts/Brain.svg"
 
 const AboutPage = () => {
 
@@ -71,31 +78,37 @@ const AboutPage = () => {
       <section className='cv-section'>
         <h2>Quick Facts</h2>
         <div className='facts'>
+
           <div className='facts-title'>
             <img src={home} alt='Home'/>
             <p>Hometown: </p>
           </div>
-          <p>Athens, Greece {String.fromCodePoint(0x1F1EC, 0x1F1F7)}</p>
+          <p><img src={Location} alt='Diploma'/>Athens, Greece {String.fromCodePoint(0x1F1EC, 0x1F1F7)}</p>
+
           <div className='facts-title'>
             <img src={Study} alt='Study'/>
             <p>Education:</p>
           </div>
           <p><img src={Diploma} alt='Diploma'/>Integrated Masters Degree </p>
           <p><img src={Location} alt='Location'/>Department of Electrical and Computer Engineer, University of Thessaly</p>
-          <div className='facts-title'>
-            <img src={Work} alt='Work'/>
-            <p>Work Experience:</p>
-          </div>
-
+          
           <div className='facts-title'>
             <img src={Like} alt='Like'/>
             <p>Hobbies:</p>
           </div>
-
+          <p><img src={Gym} alt='Gym'/>Weightlifting </p>
+          <p><img src={Ball} alt='Ball'/>Basketball & Football </p>
+          <p><img src={Books} alt='Books'/>Reading Books </p>
+          <p><img src={Motor} alt='Motor'/> Going Rides</p>
+          <p><img src={Travel} alt='Travel'/> Visiting New Places</p>
+          
           <div className='facts-title'>
             <img src={Growth} alt='Growth'/>
             <p>Personal Development:</p>
           </div>
+          <p><img src={Documents} alt='Documents'/> Document knowledge through notes and Github Projects</p>
+          <p><img src={Communication} alt='Communication'/> Reading personal development and psychology books</p>
+          <p><img src={Brain} alt='Brain'/> Expand knowledge by watching online courses</p>
         </div>
       </section>
     </div>

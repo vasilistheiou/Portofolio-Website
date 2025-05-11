@@ -1,8 +1,5 @@
-import React from 'react';
 import './ProjectsPage.css';
-// import './ProjectCard/ProjectCard'
 import ProjectCard from './ProjectCard/ProjectCard';
-import testImage from "../../Images/test.png"
 import Annotations from "../../Images/ProjectsPage/Annotations.png"
 import Transportations from "../../Images/ProjectsPage/Transportations.png"
 
@@ -23,22 +20,11 @@ const ProjectsPage = () => {
         I was responsible for the development of three interactive web platforms aimed at visualizing complex geospatial and transportation data across Greece. 
         The platforms provided dynamic, user-friendly interfaces for exploring multi-modal transportation systems, including road traffic, railway routes, maritime transport, and air travel patterns.`,
         imageUrl: Transportations
-      },
-      {
-        projectTitle : "Task Tracker Application",
-        description: "Lorem Ipsum3.....",
-        imageUrl: testImage
-      }
+      }  
     ]
-
-    // const data= {
-    //   projectTitle : "Annotation Pipeline",
-    //   description: "Lorem Ipsum....."
-    // }
 
     return (
       <div className='card-list'>
-          {/* <ProjectCard props = {data}/> */}
         {projectData.map((project, index) => (
             <ProjectCard key={index} props = {project} />
         ))}
