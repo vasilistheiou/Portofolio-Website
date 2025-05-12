@@ -24,14 +24,14 @@ const Header = () => {
 
                 <ul className={`nav-links sidebar ${isNavActive ? 'active' : ''}`}>
                     <li><FontAwesomeIcon icon={faXmark} size="lg" style={{ color: 'red' }} onClick={toggleNav} /></li>
-                    <li><NavLink to="/" onClick={toggleNav} activeClassName="active">Home</NavLink></li>
+                    <li><NavLink to="/Portofolio-Website" onClick={toggleNav} activeClassName="active">Home</NavLink></li>
                     <li><NavLink to="/about" onClick={toggleNav} activeClassName="active">About</NavLink></li>
                     <li><NavLink to="/projects" onClick={toggleNav} activeClassName="active">Projects</NavLink></li>
                     <li><NavLink to="/contact" onClick={toggleNav} activeClassName="active">Contact</NavLink></li>
                 </ul>
 
                 <ul className={"nav-links menu"}>
-                    <li><NavLink to="/">Home</NavLink></li>
+                    <li><NavLink to="/Portofolio-Website">Home</NavLink></li>
                     <li><NavLink to="/about">About</NavLink></li>
                     <li><NavLink to="/projects" >Projects</NavLink></li>
                     <li><NavLink to="/contact">Contact</NavLink></li>
