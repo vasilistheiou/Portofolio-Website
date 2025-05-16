@@ -33,13 +33,14 @@ const AboutPage = () => {
             <ProfilePicture />
           </div> 
           <p>
-            Fully dedicated to the philosophy of continuous learning and innovation, I am 
-            a software engineer with a strong foundation in artificial intelligence, 
-            software development, and database management. My passion for AI and technology drives me to create 
-            intelligent solutions and deploy them with elegance and precision. This blend of creativity, logical thinking, 
-            and advanced technology enables me to develop innovative solutions that challenge the limits of what's possible.
-          </p>
-        </div>
+          Hi, I’m a software engineer passionate about building intelligent systems that make a 
+          difference. With a strong background in artificial intelligence, software development, and 
+          database management, I love turning complex challenges into elegant, efficient solutions.
+
+          I believe in continuous learning and staying curious—always exploring new ways to 
+          blend creativity with technology. Whether it’s developing smart applications or pushing the limits of what’s 
+          possible with AI, my goal is to create work that’s not just functional, but meaningful. </p>
+          </div>
       </section>
 
       <section className='tech-section'>
