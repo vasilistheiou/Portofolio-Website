@@ -1,15 +1,22 @@
   .homepage {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 90vh;
-    width: 100vw;
     background-color: #1a1616;
     color: #f9f4f4;
     padding: 0 10%;
     box-sizing: border-box;
   }
-  
+
+  #tsparticles {
+    position: fixed;
+    width: 100vw;
+    height: 90vh;
+    z-index: 0;
+  }
+    
   .intro {
     max-width: 50%;
     /* TODO: Add min width to not shrink that much */

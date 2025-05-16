@@ -3,13 +3,16 @@ import './HomePage.css';
 import { Link } from 'react-router-dom';
 import myImage from "../../Images/Me/Myself.jpg"
 import CV from "./MyCV.pdf"
+import ParticlesBackground from "../Background/ParticlesBackground"
 
 const HomePage = () => {
 
 
   return (
     <div className="homepage">
+     <ParticlesBackground></ParticlesBackground>
       <div className="intro">
+         
         <h1>Hi,</h1>
         <h1>I'm <span className="name"> Vasilis</span></h1>
         <h4>A Passionate <strong>Machine Learning </strong>and <strong>Full Stack Developer</strong></h4>
