@@ -1,3 +1,4 @@
 
 build/
 front-end/node_modules/
+.claude/
